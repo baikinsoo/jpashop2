@@ -23,6 +23,13 @@ public abstract class Item extends BaseEntity{
 
 
 
+
+
+
+
+
+
+
     public Long getId() {
         return id;
     }
