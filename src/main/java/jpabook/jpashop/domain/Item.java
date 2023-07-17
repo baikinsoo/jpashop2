@@ -7,7 +7,7 @@ import java.util.List;
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn
-public abstract class Item extends BaseEntity{
+public abstract class Item extends BaseEntity {
 
     @Id
     @GeneratedValue
@@ -20,15 +20,6 @@ public abstract class Item extends BaseEntity{
 
     @ManyToMany(mappedBy = "items")
     private List<Category> categories = new ArrayList<>();
-
-
-
-
-
-
-
-
-
 
     public Long getId() {
         return id;
